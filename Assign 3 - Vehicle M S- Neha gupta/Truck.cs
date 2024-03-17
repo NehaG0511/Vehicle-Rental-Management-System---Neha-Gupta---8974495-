@@ -26,12 +26,12 @@ namespace Assign_3___Vehicle_M_S__Neha_gupta
         public override void DisplayDetails()
         {
             base.DisplayDetails();
-            Console.WriteLine($"\n Properties of Truck Details: ");
+            Console.WriteLine($"\n Properties of Truck are: ");
             Console.WriteLine($"Capacity: {Capacity}");
             Console.WriteLine($"Truck Type: {TruckType}");
             Console.WriteLine($"Four Wheel Drive: {FourWheelDrive}");
         }
     }
 
-}
+} 
 
