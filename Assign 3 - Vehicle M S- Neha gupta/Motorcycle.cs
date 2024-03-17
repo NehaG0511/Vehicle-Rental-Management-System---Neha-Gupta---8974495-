@@ -23,7 +23,7 @@ namespace Assign_3___Vehicle_M_S__Neha_gupta
         public override void DisplayDetails()
         {
             base.DisplayDetails();
-            Console.WriteLine($"\n Properties of Motorcycle Details: ");
+            Console.WriteLine($"\n Properties of Motorcycle are: ");
             Console.WriteLine($"Engine Capacity: {EngineCapacity}");
             Console.WriteLine($"Fuel Type: {FuelType}");
             Console.WriteLine($"Has Fairing: {HasFairing}");
