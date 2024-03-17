@@ -6,7 +6,7 @@ namespace Assign_3___Vehicle_M_S__Neha_gupta
     {
         static void Main(string[] args)
         {
-            // Create vehicles
+            //Displaing Fleet details of Vehicles
             Vehicle car = new Car("Mustang", "Ford", 2024, 150.00m, 2, "V8", "Automatic", true);
             Vehicle truck = new Truck("M-579", "Peterbilt", 2023, 200.00m, 3000, "V6", false);
             Vehicle motorcycle = new Motorcycle("Softail", "Harely Davidson", 2022, 100.00m, 600, "Gasoline", true);
@@ -14,15 +14,15 @@ namespace Assign_3___Vehicle_M_S__Neha_gupta
             // Create rental agency
             RentalAgency agency = new RentalAgency();
 
-            while (true)
+            while (true) //Applying While loop for satisfying various requirements
             {
                 Console.WriteLine("\n Welcome to Vehicle Rental Management System - Choose from below");
-                Console.WriteLine("1. Add Vehicle");
-                Console.WriteLine("2. Remove Vehicle");
-                Console.WriteLine("3. Rent Vehicle");
-                Console.WriteLine("4. Display Total Revenue");
-                Console.WriteLine("5. Display Fleet Details");
-                Console.WriteLine("6. Exit");
+                Console.WriteLine("1. Add Vehicle"); //Choice 1 for adding vehicle
+                Console.WriteLine("2. Remove Vehicle"); //choice 2 for reemoving vehicle
+                Console.WriteLine("3. Rent Vehicle"); //choice 3 for renting vehicle
+                Console.WriteLine("4. Display Total Revenue"); //choice 4 for displaying total revenue
+                Console.WriteLine("5. Display Fleet Details"); //choice for fleet details showcase
+                Console.WriteLine("6. Exit"); //exit the app
 
                 int choice = Convert.ToInt32(Console.ReadLine());
 
