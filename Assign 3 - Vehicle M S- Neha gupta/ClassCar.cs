@@ -32,4 +32,4 @@ namespace Assign_3___Vehicle_M_S__Neha_gupta
             Console.WriteLine($"Convertible: {Convertible}");
         }
     }
-}
+} //here Class car is completed with properties 
