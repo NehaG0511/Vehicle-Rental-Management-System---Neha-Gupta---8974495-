@@ -22,7 +22,7 @@ namespace Assign_3___Vehicle_M_S__Neha_gupta
             Convertible = convertible;
         }
 
-        public override void DisplayDetails()
+        public override void DisplayDetails() //display car details
         {
             base.DisplayDetails();
             Console.WriteLine($"\n Properties of Car Details: ");
