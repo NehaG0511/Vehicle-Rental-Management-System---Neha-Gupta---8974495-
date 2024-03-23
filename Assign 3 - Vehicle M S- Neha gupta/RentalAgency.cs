@@ -12,7 +12,7 @@ namespace Assign_3___Vehicle_M_S__Neha_gupta
         private int totalRevenue;
         private int currentIndex;
 
-        public int TotalRevenue
+        public int TotalRevenue            
         {
             get { return totalRevenue; }
         }
@@ -22,7 +22,7 @@ namespace Assign_3___Vehicle_M_S__Neha_gupta
             currentIndex = 0;
         }
 
-        public void AddVehicle(Vehicle vehicle)
+        public void AddVehicle(Vehicle vehicle    //add vehivle
         {
             if (currentIndex < fleet.Length)
             {
@@ -35,7 +35,7 @@ namespace Assign_3___Vehicle_M_S__Neha_gupta
             }
         }
 
-        public void RemoveVehicle(Vehicle vehicle)
+        public void RemoveVehicle(Vehicle vehicle) //remove vehicle
         {
             for (int i = 0; i < currentIndex; i++)
             {
@@ -54,7 +54,7 @@ namespace Assign_3___Vehicle_M_S__Neha_gupta
             }
         }
 
-        public void RentVehicle(Vehicle vehicle)
+        public void RentVehicle(Vehicle vehicle) // rentvehicle
         {
             for (int i = 0; i < currentIndex; i++)
             {
