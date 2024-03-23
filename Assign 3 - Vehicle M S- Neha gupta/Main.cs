@@ -143,41 +143,41 @@ namespace Assign_3___Vehicle_M_S__Neha_gupta
                         break;
 
                     case 3:
-                        Console.Write("Enter vehicle type (Car, Truck, Motorcycle):");
-                        string rentVehicleType = Console.ReadLine();
+    Console.Write("Enter vehicle type (Car, Truck, Motorcycle):");
+    string rentVehicleType = Console.ReadLine();
 
-                        switch (rentVehicleType.ToLower())
-                        {
-                            case "car":
-                                Console.Write("Enter model: ");
-                                string Model = Console.ReadLine();
-                                Console.Write("Enter manufacturer: ");
-                                string Manufacturer = Console.ReadLine();
-                                Console.Write("Enter year: ");
-                                int Year = Convert.ToInt32(Console.ReadLine());
-                                Console.WriteLine("Congratulations! Car is available for rent");
-                                agency.RentVehicle(new Car(Model, Manufacturer, Year, 0, 0, null, null, false));
-                                break;
-                            case "truck":
-                                Console.Write("Enter model: ");
-                                Model = Console.ReadLine();
-                                Console.Write("Enter manufacturer: ");
-                                Manufacturer = Console.ReadLine();
-                                Console.Write("Enter year: ");
-                                Year = Convert.ToInt32(Console.ReadLine());
-                                Console.WriteLine("Congratulations! Truck is available for rent");
-                                agency.RentVehicle(new Truck(Model, Manufacturer, Year, 0, 0, null, false));
-                                break;
-                            case "motorcycle":
-                                Console.Write("Enter model: ");
-                                Model = Console.ReadLine();
-                                Console.Write("Enter manufacturer: ");
-                                Manufacturer = Console.ReadLine();
-                                Console.Write("Enter year: ");
-                                Year = Convert.ToInt32(Console.ReadLine());
-                                Console.WriteLine("Congratulations! Motorcycle is available for rent");
-                                agency.RentVehicle(new Motorcycle(Model, Manufacturer, Year, 0, 0, null, false));
-                                break;
+    switch (rentVehicleType.ToLower())
+    {
+        case "car":
+            Console.Write("Enter model: ");
+            string carModel = Console.ReadLine();
+            Console.Write("Enter manufacturer: ");
+            string carManufacturer = Console.ReadLine();
+            Console.Write("Enter year: ");
+            int carYear = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Congratulations! Car is available for rent");
+            agency.RentVehicle(car);
+            break;
+        case "truck":
+            Console.Write("Enter model: ");
+            string truckModel = Console.ReadLine();
+            Console.Write("Enter manufacturer: ");
+            string truckManufacturer = Console.ReadLine();
+            Console.Write("Enter year: ");
+            int truckYear = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Congratulations! Truck is available for rent");
+            agency.RentVehicle(truck);
+            break;
+        case "motorcycle":
+            Console.Write("Enter model: ");
+            string motorcycleModel = Console.ReadLine();
+            Console.Write("Enter manufacturer: ");
+            string motorcycleManufacturer = Console.ReadLine();
+            Console.Write("Enter year: ");
+            int motorcycleYear = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Congratulations! Motorcycle is available for rent");
+            agency.RentVehicle(motorcycle);
+            break;
                             default:
                                 Console.WriteLine("Invalid vehicle type.");
                                 break;
