@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assign_3___Vehicle_M_S__Neha_gupta
 {
-    public class Motorcycle : Vehicle
+    public class Motorcycle : Vehicle       //get motorcycle properties
     {
         public int EngineCapacity { get; set; }
         public string FuelType { get; set; }
